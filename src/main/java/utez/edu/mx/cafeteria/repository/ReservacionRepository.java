@@ -9,7 +9,6 @@ import java.util.List;
 
 @Repository
 public interface ReservacionRepository extends JpaRepository<Reservacion, Long> {
-    // Busca reservas activas (no iniciadas ni canceladas) de una mesa en un rango de tiempo
     List<Reservacion> findByMesaIdAndIniciadaFalseAndCanceladaFalseAndFechaHoraBetween(
             Long mesaId,
             LocalDateTime inicio,

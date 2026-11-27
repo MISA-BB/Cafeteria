@@ -15,7 +15,7 @@ public class Mesa {
     private Long id;
 
     @Column(nullable = false, unique = true)
-    private String identificador; // Ej. "Mesa 1", "Terraza A"
+    private String identificador;
 
     @Column(nullable = false)
     private Integer maxComensales;

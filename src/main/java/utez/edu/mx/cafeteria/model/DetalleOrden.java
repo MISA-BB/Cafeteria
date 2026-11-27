@@ -19,9 +19,9 @@ public class DetalleOrden {
     private Integer cantidad;
 
     @Column(nullable = false)
-    private Double precioUnitario; // Guarda el precio del catálogo al momento de pedir
+    private Double precioUnitario;
 
-    private String notas; // Ej. "sin cebolla"
+    private String notas;
 
     @ManyToOne
     @JoinColumn(name = "platillo_id", nullable = false)

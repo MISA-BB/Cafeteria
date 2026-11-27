@@ -19,13 +19,11 @@ public class SeguimientoMesaDTO {
     private Integer maxComensales;
     private EstadoMesa estado;
 
-    // Datos si está OCUPADA
     private Long ocupacionId;
     private TipoOcupacion tipoOcupacion;
     private Integer numComensales;
     private LocalDateTime horaInicio;
     private List<Orden> ordenes;
 
-    // Datos si tiene RESERVACIONES próximas
     private List<Reservacion> reservacionesPendientes;
 }

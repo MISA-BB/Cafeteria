@@ -7,5 +7,5 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CerrarMesaDTO {
-    private String formaPago; // Opcional según DFR ("si aplica, forma de pago")
+    private String formaPago;
 }

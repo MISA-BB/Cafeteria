@@ -21,7 +21,7 @@ public class Platillo {
     private Double precio;
 
     @Column(nullable = false)
-    private Boolean disponible = true; // false = agotado
+    private Boolean disponible = true;
 
     @ManyToOne
     @JoinColumn(name = "categoria_id", nullable = false)

@@ -18,7 +18,7 @@ public class Ocupacion {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private TipoOcupacion tipo; // ASIGNACION o RESERVACION
+    private TipoOcupacion tipo;
 
     @Column(nullable = false)
     private Integer numComensales;
@@ -31,7 +31,7 @@ public class Ocupacion {
     @Column(nullable = false)
     private Boolean activa = true;
 
-    private String formaPago; // Efectivo, Tarjeta, Transferencia (al cerrar)
+    private String formaPago;
 
     private Double totalPagado;
 
@@ -41,5 +41,5 @@ public class Ocupacion {
 
     @OneToOne
     @JoinColumn(name = "reservacion_id")
-    private Reservacion reservacion; // Null si fue asignación al momento
+    private Reservacion reservacion;
 }
